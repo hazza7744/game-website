@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Galaxy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #f0f0f0;
+    }
+
+    header {
+      background: linear-gradient(to right, #1f1c2c, #928dab);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    .game-section {
+      padding: 2rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      border-bottom: 2px solid #444;
+      padding-bottom: 0.5rem;
+    }
+
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .game-card {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .game-card:hover {
+      transform: scale(1.05);
+      background-color: #292929;
+    }
+
+    .game-card a {
+      color: #76c7c0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 1rem;
+      color: #777;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Game Galaxy</h1>
+    <p class="tagline">Explore a universe of fun browser games!</p>
+  </header>
+
+  <section class="game-section">
+    <h2>Featured Games</h2>
+    <div class="game-grid">
+      <div class="game-card">
+        <a href="https://jcw87.github.io/c2-sans-fight/" target="_blank">Bad Time Simulator</a>
+      </div>
+      <div class="game-card">
+        <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a>
+      </div>
+      <div class="game-card">
+        <a href="https://taming.io/" target="_blank">Taming.io</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="game-section">
+    <h2>More Games</h2>
+    <div class="game-grid">
+      <div class="game-card"><a href="#">Smash Karts</a></div>
+      <div class="game-card"><a href="#">Basket Random</a></div>
+      <div class="game-card"><a href="#">Stickman Fighter</a></div>
+      <div class="game-card"><a href="#">Short Life 2</a></div>
+      <div class="game-card"><a href="#">Capybara Clicker 2</a></div>
+      <div class="game-card"><a href="#">Bloxd.io</a></div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Game Galaxy | All rights reserved.
+  </footer>
+</body>
+</html>
